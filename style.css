@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Nunito:wght@600;700&family=Poppins:ital,wght@0,400;0,500;0,600;1,300;1,600&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+
+body {
+    box-sizing: border-box;
+}
+
+h4 {
+    font-family: 'Poppins', sans-serif;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+    background: rgb(213, 62, 255);
+}
+
+/*--------------------------Header CSS----------------------------*/
+.header {
+    width: 1100px;
+    margin: auto;
+    background: #000;
+}
+
+.row-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ca-header {
+    max-width: 500px;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 0 10px;
+}
+
+.header-btn {
+    background: #d448ff;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 7px 20px;
+}
+
+.header-btn-1 {
+    color: #d448ff;
+    background: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 7px 20px;
+}
+
+.header-img {
+    width: 100%;
+}
+
+
+/*--------------------------Overview CSS----------------------------*/
+
+.overview {
+    width: 1100px;
+    margin: auto;
+}
+
+.row-o {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ca-o {
+    border: 1px solid rgb(233, 233, 233);
+    max-width: 300px;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 10px;
+    transition: 0.6s ease-out;
+    cursor: pointer;
+}
+
+.ca-o:hover {
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.over-left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.over-img {
+    width: 100px;
+}
+
+
+/*--------------------------Overview CSS End----------------------------*/
+
+
+/*--------------------------Courses CSS ----------------------------*/
+
+
+.course {
+    width: 1100px;
+    margin: auto;
+}
+
+.row-c {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ca {
+    max-width: 300px;
+    border-radius: 10px;
+    border: 1px solid #d3d3d3;
+    padding: 10px;
+    margin: 10px;
+}
+
+.course-btn {
+    background: #d448ff;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 7px 20px;
+    text-align: center;
+    width: 100% !important;
+}
+
+.feedback-row {
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.feedback {
+    display: flex;
+    justify-content: space-between;
+    width: 1100px;
+    margin: auto;
+}
+
+.student-feedback {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.student-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 120px;
+}
+
+span {
+    background: #e285ff;
+}
+
+.card {
+    margin: 10px;
+}
+
+
+.bottom {
+    background: #000;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.technology {
+    width: 1100px;
+    margin: auto;
+}
+
+.row-t {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ca-t {
+    border: 1px solid rgb(233, 233, 233);
+    max-width: 250px;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    transition: 0.6s ease-out;
+    cursor: pointer;
+}
+
+.ca-t:hover {
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.tech-img {
+    width: 170px;
+}
+
+/*---------------Contact------------------*/
+.cont {
+    width: 1100px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.left-h {
+    display: flex;
+    align-items: center;
+}
+.left {
+    display: block;
+    padding: 10px;
+}
+.right {
+    border: 1px solid #fff;
+    background: #fff;
+    margin: 10px;
+    padding: 10px;
+}
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.contact-btn {
+    background: #d448ff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+}
+textarea {
+    width: 100%;
+}
+.details {
+    width: auto;
+    padding: 10px;
+    border: 1px solid #fff;
+    margin: 10px;
+    border-radius: 10px;
+}
+.le {
+    display: flex;
+}
+
+.map {
+    width: 1100px;
+    margin: 20px auto;
+    border: 1px solid red;
+
+}
+iframe {
+    width: 100%;
+}
+
+/*--------------------------Media Querry----------------------------*/
+
+
+@media (max-width:1070px) {
+
+    .course,
+    .feedback {
+        width: auto;
+    }
+
+    .overview,
+    .cont {
+        width: auto;
+    }
+
+    .map,
+    .header {
+        width: auto;
+    }
+
+    .technology {
+        width: auto;
+    }
+
+    .tech-img {
+        width: 120px;
+    }
+}
+
+@media (max-width:800px) {
+    .tech-img {
+        width: 100px;
+    }
+}
+
+@media (max-width:768px) {
+    .row-header {
+        display: block;
+    }
+
+    .row-c {
+        display: block;
+    }
+
+    .row-o {
+        display: block;
+    }
+
+    .feedback {
+        display: block;
+    }
+
+    .ca {
+        max-width: 100%;
+        box-sizing: border-box;
+        margin: 10px;
+    }
+
+    .ca-o {
+        max-width: 100%;
+        box-sizing: border-box;
+        margin: 10px;
+    }
+
+    .row-t {
+        display: block;
+    }
+
+    .ca-t {
+        max-width: 100%;
+        box-sizing: border-box;
+        margin: 10px;
+    }
+
+    .tech-img {
+        width: 100%;
+    }
+
+    .cont {
+        display: block;
+    }
+
+    .le {
+        display: block;
+
+    }
+}
+
+@media (max-width:580px) {
+    .bottom {
+        display: block;
+    }
+}
