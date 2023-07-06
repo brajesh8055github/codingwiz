@@ -5,6 +5,10 @@ body {
     box-sizing: border-box;
 }
 
+.font {
+    font-family: 'Poppins', sans-serif;
+}
+
 h4 {
     font-family: 'Poppins', sans-serif;
 }
@@ -33,6 +37,8 @@ h1 {
     justify-content: space-between;
     align-items: center;
 }
+
+
 
 .ca-header {
     max-width: 500px;
@@ -67,20 +73,19 @@ h1 {
 /*--------------------------Overview CSS----------------------------*/
 
 .overview {
-    width: 1100px;
+    max-width: 1100px;
     margin: auto;
-}
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
 
-.row-o {
-    display: flex;
-    justify-content: space-between;
 }
 
 .ca-o {
-    border: 1px solid rgb(233, 233, 233);
-    max-width: 300px;
+    max-width: 400px;
     border-radius: 10px;
-    padding: 5px;
+    border: 1px solid rgb(233, 233, 233);
+    padding: 10px;
     margin: 10px;
     transition: 0.6s ease-out;
     cursor: pointer;
@@ -108,17 +113,16 @@ h1 {
 
 
 .course {
-    width: 1100px;
+    max-width: 1100px;
     margin: auto;
-}
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
 
-.row-c {
-    display: flex;
-    justify-content: space-between;
 }
 
 .ca {
-    max-width: 300px;
+    max-width: 400px;
     border-radius: 10px;
     border: 1px solid #d3d3d3;
     padding: 10px;
@@ -136,15 +140,54 @@ h1 {
     width: 100% !important;
 }
 
+.card-img {
+    width: 100px;
+    height: 200px;
+}
+
+/* ------------------------------------------------------Technology------------------------------------------ */
+.tech {
+    max-width: 1100px;
+    font-family: 'Poppins', sans-serif;
+    margin: auto;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.css {
+    width: 150px;
+    height: 150px;
+}
+
+.ca-t {
+    border: 1px solid rgb(233, 233, 233);
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    transition: 0.6s ease-out;
+    cursor: pointer;
+}
+
+.ca-t:hover {
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+/*------------------------------------------------------------- Feedback----------------------------------------------- */
 .feedback-row {
     gap: 10px;
     margin-bottom: 10px;
 }
 
+.left-h {
+    display: flex;
+}
+
 .feedback {
     display: flex;
     justify-content: space-between;
-    width: 1100px;
+    max-width: 1100px;
     margin: auto;
 }
 
@@ -153,15 +196,16 @@ h1 {
     justify-content: space-between;
     align-items: center;
 }
+
 .student-img {
     width: 40px;
     height: 40px;
     border-radius: 120px;
 }
 
-span {
+/* span {
     background: #e285ff;
-}
+} */
 
 .card {
     margin: 10px;
@@ -205,79 +249,65 @@ span {
 }
 
 /*---------------Contact------------------*/
-.cont {
-    width: 1100px;
+
+.contact-w {
+    max-width: 1100px;
     margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.left-h {
-    display: flex;
-    align-items: center;
-}
-.left {
-    display: block;
-    padding: 10px;
-}
-.right {
-    border: 1px solid #fff;
-    background: #fff;
-    margin: 10px;
-    padding: 10px;
-}
-input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-}
-.contact-btn {
-    background: #d448ff;
-    color: #ffffff;
-    border: none;
-    border-radius: 5px;
-    padding: 10px;
-    width: 100%;
-}
-textarea {
-    width: 100%;
-}
-.details {
-    width: auto;
-    padding: 10px;
-    border: 1px solid #fff;
-    margin: 10px;
-    border-radius: 10px;
-}
-.le {
-    display: flex;
-}
-
-.map {
-    width: 1100px;
-    margin: 20px auto;
-    border: 1px solid red;
+    font-family: 'Poppins', sans-serif;
 
 }
+
+.need {
+    padding-bottom: 20px;
+}
+
 iframe {
     width: 100%;
 }
+
+.contact {
+    margin: 20px auto;
+    padding: 10px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 16px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input:focus {
+    outline: 1px solid rgb(209, 223, 255);
+
+}
+
+.btn-c {
+    background: #000;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    padding: 10px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
 
 /*--------------------------Media Querry----------------------------*/
 
 
 @media (max-width:1070px) {
 
-    .course,
-    .feedback {
-        width: auto;
-    }
-
-    .overview,
-    .cont {
-        width: auto;
-    }
 
     .map,
     .header {
@@ -293,39 +323,107 @@ iframe {
     }
 }
 
+@media (max-width:1020px) {
+    .tech {
+        margin: auto;
+        display: grid;
+        gap: 10px;
+    }
+
+}
+
 @media (max-width:800px) {
     .tech-img {
         width: 100px;
     }
 }
 
-@media (max-width:768px) {
+@media (max-width:815px) {
+    .css {
+        width: 100px;
+        height: 100px;
+
+    }
+}
+
+@media (max-width:705px) {
+    .tech {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .css {
+        width: 130px;
+        height: 130px;
+    }
+
+}
+
+@media (max-width:658px) {
+    .tech {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .css {
+        width: 120px;
+        height: 120px;
+    }
+
+}
+
+@media (max-width:343px) {
+    .tech {
+        display: block;
+    }
+
+    .css {
+        width: 120px;
+        height: 120px;
+    }
+
+}
+
+@media (max-width:776px) {
     .row-header {
         display: block;
+        text-align: center;
+        max-width: 100%;
     }
 
-    .row-c {
-        display: block;
+    .ca-header {
+        max-width: 100%;
     }
 
-    .row-o {
-        display: block;
-    }
-
-    .feedback {
+    .course {
         display: block;
     }
 
     .ca {
         max-width: 100%;
-        box-sizing: border-box;
-        margin: 10px;
     }
 
     .ca-o {
         max-width: 100%;
-        box-sizing: border-box;
-        margin: 10px;
+    }
+
+    .overview {
+        display: block;
+    }
+}
+
+/* @media (max-width:700px) {
+    .row-header {
+        display: block;
+        text-align: center;
+        max-width: 100%;
+    }
+    .ca-header{
+        max-width: 100%;
+    }
+} */
+@media (max-width:768px) {
+
+    .feedback {
+        display: block;
     }
 
     .row-t {
@@ -349,6 +447,14 @@ iframe {
     .le {
         display: block;
 
+    }
+}
+
+
+
+@media (max-width:580px) {
+    .header-btn-1 {
+        margin: 10px 0;
     }
 }
 
