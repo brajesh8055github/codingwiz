@@ -51,7 +51,7 @@ h1 {
     background: #d448ff;
     color: #fff;
     border: none;
-    border-radius: 10px;
+    border-radius: 5px;
     cursor: pointer;
     padding: 7px 20px;
 }
@@ -60,7 +60,7 @@ h1 {
     color: #d448ff;
     background: #fff;
     border: none;
-    border-radius: 10px;
+    border-radius: 5px;
     cursor: pointer;
     padding: 7px 20px;
 }
@@ -120,6 +120,7 @@ h1 {
     grid-template-columns: repeat(3, 1fr);
 
 }
+
 
 .ca {
     max-width: 400px;
@@ -247,7 +248,14 @@ h1 {
 .tech-img {
     width: 170px;
 }
-
+/*-------------------------------- Footer--------------------------------------- */
+.fl{
+    border-bottom: 2px solid rgb(255, 247, 2);
+    
+}
+.footer a{
+    font-family: 'Poppins', sans-serif;
+}
 /*---------------Contact------------------*/
 
 .contact-w {
